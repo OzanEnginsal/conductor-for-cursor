@@ -6,7 +6,7 @@ This repository contains Context-Driven Development systems for Cursor IDE that 
 
 ## Overview
 
-This project provides two specialized Conductor systems:
+This project provides three specialized Conductor systems:
 
 ### [Base Conductor](conductor/README.md)
 
@@ -34,6 +34,20 @@ A specialized Conductor system optimized for building platform API connectors (L
 
 **Ideal for**: Building reliable, well-tested API connectors for third-party platforms.
 
+### [Storage Conductor](storage-conductor/README.md)
+
+A specialized Conductor system optimized for building storage solutions (databases, object storage, cache systems, data persistence layers). It extends the base Conductor with:
+
+* Storage-focused planning and workflows
+* Schema design patterns and best practices
+* Migration management with forward and backward support
+* Data integrity and validation standards
+* Backup and recovery procedures
+* Query optimization and indexing guidelines
+* Storage-specific standards and templates
+
+**Ideal for**: Building reliable, performant, and maintainable storage components.
+
 ## Quick Start
 
 ### Installing Base Conductor
@@ -52,9 +66,17 @@ See the [Base Conductor README](conductor/README.md) for detailed documentation.
 
 See the [API Conductor README](api-conductor/README.md) for detailed documentation.
 
-### Using Both
+### Installing Storage Conductor
 
-You can use both conductors in the same project if needed. They operate independently and can coexist without conflicts.
+1. Copy the `.cursor/commands/storage-conductor/` directory to your project root
+2. Copy the `storage-conductor/` directory to your project root
+3. Run `/storage-conductor-setup` in Cursor to initialize your project
+
+See the [Storage Conductor README](storage-conductor/README.md) for detailed documentation.
+
+### Using Multiple Conductors
+
+You can use any combination of conductors in the same project if needed. They operate independently and can coexist without conflicts.
 
 ## Philosophy
 
@@ -66,6 +88,7 @@ Instead of just writing code, Conductor ensures a consistent, high-quality lifec
 
 * **[Base Conductor Documentation](conductor/README.md)** - Complete guide for general-purpose Context-Driven Development
 * **[API Conductor Documentation](api-conductor/README.md)** - Complete guide for API connector development
+* **[Storage Conductor Documentation](storage-conductor/README.md)** - Complete guide for storage component development
 
 ## License
 
