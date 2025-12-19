@@ -22,7 +22,7 @@ The philosophy behind Conductor is simple: control your code. By treating contex
 ## Installation
 
 1. Clone or download this repository
-2. Copy the `.cursor/commands/` directory to your project root
+2. Copy the `.cursor/commands/conductor/` directory to your project root
 3. Copy the `conductor/` directory to your project root (or let the `/setup` command create it)
 
 That's it! The commands will be available in Cursor when you type `/` in the chat.
@@ -119,11 +119,12 @@ During implementation, you can also:
 ```
 .cursor/
   commands/
-    setup.md
-    new-track.md
-    implement.md
-    status.md
-    revert.md
+    conductor/
+      setup.md
+      new-track.md
+      implement.md
+      status.md
+      revert.md
 conductor/
   product.md
   product-guidelines.md
